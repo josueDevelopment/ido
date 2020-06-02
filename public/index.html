@@ -1,0 +1,32 @@
+  
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <title>PoseNet example using p5.js</title>
+    
+       <!-- Load TensorFlow.js-->
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+      <!-- Load the coco-ssd model. -->
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+      <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+      <link href="styles.css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+    
+    <body>
+      <section class='cont-items'>
+        <h1>ALARMA</h1>
+        <video id="video" width="640" height="480"></video>
+        <a id='btn'>ALERTA</a>
+      </section>
+      <section class="status">
+        <div>STATUS</div>
+        <div id="status">INACTIVE</div>
+      </section>
+      
+    <script src="sketch.js" ></script>
+    </body>
+    
+    </html>
